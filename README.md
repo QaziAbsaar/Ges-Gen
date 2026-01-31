@@ -4,7 +4,7 @@
 
 Draw in the air using hand gestures captured through your webcam. Your sketches are then transformed into polished AI-generated images using Stable Diffusion.
 
-![Demo](docs/demo.gif)
+![Hero Banner](images/Hero_Banner_image.png)
 
 ## 🌟 Features
 
@@ -17,6 +17,8 @@ Draw in the air using hand gestures captured through your webcam. Your sketches 
 
 ## ✋ Gesture Guide
 
+![Gesture Guide](images/Gesture_Guide.png)
+
 | Gesture | Action | Description |
 |---------|--------|-------------|
 | ☝️ Index finger up | **Draw** | Move finger to draw strokes |
@@ -25,6 +27,16 @@ Draw in the air using hand gestures captured through your webcam. Your sketches 
 | ✊ Closed fist | **Clear** | Hold for 0.8s to clear canvas |
 | 🤙 Pinky only | **Undo** | Undo last stroke |
 | 🖐️ Three fingers | **Erase** | Erase strokes under finger |
+
+## 🔄 Workflow
+
+![Workflow](images/Workflow_image.png)
+
+### Sketch to AI Transformation
+
+| Input Sketch | AI Generated Output |
+|:------------:|:-------------------:|
+| ![Sketch](images/Sketch.png) | ![Generated](images/Sketch%20after%20Process.png) |
 
 ## 🛠️ Installation
 
@@ -104,6 +116,15 @@ Gesture+Gen/
 ├── main.py                 # Application entry point
 ├── requirements.txt        # Python dependencies
 ├── README.md              # This file
+├── .env                   # Environment variables (secrets)
+├── config.json            # Configuration settings
+├── images/                # Documentation images
+│   ├── Hero_Banner_image.png
+│   ├── Gesture_Guide.png
+│   ├── Workflow_image.png
+│   ├── Sketch.png
+│   └── Sketch after Process.png
+├── models/                # Downloaded ML models
 ├── src/
 │   ├── __init__.py        # Package initialization
 │   ├── camera.py          # Webcam stream handler
