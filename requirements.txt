@@ -1,0 +1,29 @@
+# Gesture+Gen - Dependencies
+# Real-time gesture-based drawing and AI image generation
+
+# Core computer vision
+opencv-python>=4.8.0
+mediapipe>=0.10.0
+numpy>=1.24.0
+
+# Image processing
+Pillow>=10.0.0
+
+# Environment variables
+python-dotenv>=1.0.0
+
+# AI image generation - Hugging Face
+huggingface_hub>=0.20.0  # For InferenceClient with fal.ai provider
+
+# HTTP requests (fallback for API-based generation)
+requests>=2.31.0
+
+# Optional: Local generation (requires GPU)
+# Uncomment the following for local generation:
+# torch>=2.0.0
+# diffusers>=0.21.0
+# transformers>=4.30.0
+# accelerate>=0.20.0
+
+# Optional: Streamlit UI
+# streamlit>=1.28.0
